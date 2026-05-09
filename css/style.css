@@ -104,3 +104,21 @@ footer i {
     top: 100px;
     background: white;
 }
+
+/* CHECKOUT */
+.checkout-summary {
+    position: sticky;
+    top: 100px;
+}
+/* CONFIRMATION PAGE */
+.confirmation-section {
+    min-height: 100vh;
+    background: #f8f9fa;
+}
+.confirmation-box {
+    max-width: 700px;
+    margin: auto;
+}
+.confirmation-icon {
+    font-size: 100px;
+}
