@@ -1,0 +1,8 @@
+@media(max-width:768px){
+    .hero-section {
+        text-align: center;
+    }
+    .hero-image {
+        margin-top: 30px;
+    }
+}
