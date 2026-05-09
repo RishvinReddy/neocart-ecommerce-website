@@ -1,9 +1,9 @@
-# 🛒 NeoCart - Modern E-Commerce Website
+#  NeoCart - Modern E-Commerce Website
 NeoCart is a fully responsive modern e-commerce frontend website built using HTML, CSS, JavaScript, Bootstrap, jQuery, and LocalStorage.
 This project was developed as part of an internship project requirement for designing a complete e-commerce website with modern UI and ecommerce functionalities.
 ---
-# 🚀 Features
-## 🏠 Home Page
+#  Features
+##  Home Page
 - Responsive navbar
 - Hero section
 - Shop by category
@@ -11,38 +11,38 @@ This project was developed as part of an internship project requirement for desi
 - Features section
 - Footer
 - Scroll-to-top button
-## 🛍 Products Page
+##  Products Page
 - Product listing
 - Search products
 - Category filtering
 - Price range filtering
-## 📦 Product View Page
+##  Product View Page
 - Product gallery
 - Ratings
 - Quantity controls
 - Add to cart
 - Related products
-## 🛒 Cart System
+##  Cart System
 - Add/remove products
 - Quantity management
 - Dynamic total calculation
 - Persistent cart using LocalStorage
-## 💳 Checkout System
+##  Checkout System
 - Shipping information form
 - Billing details
 - Order summary
 - jQuery form validation
-## ✅ Order Confirmation
+##  Order Confirmation
 - Order success page
 - Dynamic order ID
 - Order status
-## 📂 Additional Pages
+##  Additional Pages
 - Category page
 - About Us page
 - Contact Us page
 - Search page
 ---
-# 🧰 Technologies Used
+#  Technologies Used
 - HTML5
 - CSS3
 - JavaScript
@@ -50,7 +50,7 @@ This project was developed as part of an internship project requirement for desi
 - jQuery
 - LocalStorage API
 ---
-# 📁 Project Structure
+#  Project Structure
 ```bash
 NeoCart/
 │
@@ -79,7 +79,7 @@ NeoCart/
 └── README.md
 ```
 ---
-# 🎯 Key Functionalities
+#  Key Functionalities
 - Fully responsive design
 - Dynamic filtering system
 - Product image gallery
@@ -88,7 +88,7 @@ NeoCart/
 - Smooth ecommerce workflow
 - Clean modern UI
 ---
-# 📸 Screenshots
+#  Screenshots
 ## Home Page
 Modern responsive homepage with featured products and categories.
 ## Products Page
@@ -96,7 +96,7 @@ Dynamic filtering using category, search, and price range.
 ## Cart & Checkout
 Complete ecommerce flow with order confirmation.
 ---
-# 🔮 Future Improvements
+#  Future Improvements
 - Backend integration
 - Payment gateway integration
 - User authentication
@@ -104,10 +104,10 @@ Complete ecommerce flow with order confirmation.
 - Product reviews
 - Admin dashboard
 ---
-# 👨💻 Author
+#  Author
 Developed by Rishvin Reddy
 Portfolio:
 https://rishvinreddy.github.io
 ---
-# 📄 License
+#  License
 This project is licensed under the MIT License.
