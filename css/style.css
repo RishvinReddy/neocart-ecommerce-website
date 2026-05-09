@@ -93,3 +93,14 @@ footer i {
     height: 250px;
     object-fit: cover;
 }
+
+/* CART PAGE */
+.cart-item img {
+    height: 120px;
+    object-fit: cover;
+}
+.cart-summary {
+    position: sticky;
+    top: 100px;
+    background: white;
+}
