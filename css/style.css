@@ -51,3 +51,14 @@ footer i {
     border-radius: 50%;
     z-index: 999;
 }
+
+/* FILTER BOX */
+.filter-box {
+    background: white;
+    position: sticky;
+    top: 100px;
+}
+/* PRODUCTS PAGE */
+.product-item {
+    transition: 0.3s;
+}
