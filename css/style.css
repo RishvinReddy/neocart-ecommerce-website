@@ -122,3 +122,20 @@ footer i {
 .confirmation-icon {
     font-size: 100px;
 }
+
+/* CATEGORY PAGE */
+.category-page-card {
+    transition: 0.3s;
+}
+.category-page-card:hover {
+    transform: translateY(-10px);
+}
+.category-page-card img {
+    height: 220px;
+    object-fit: cover;
+}
+/* SEARCH PAGE */
+.search-item img {
+    height: 250px;
+    object-fit: cover;
+}
