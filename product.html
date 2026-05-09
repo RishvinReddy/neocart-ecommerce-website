@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - NeoCart</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="index.html">
+                NeoCart
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">
+                            <i class="bi bi-cart3"></i> Cart
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- PRODUCT DETAILS -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <!-- IMAGE GALLERY -->
+                <div class="col-lg-6">
+                    <div class="main-image-container shadow-sm">
+                        <img
+                            id="mainProductImage"
+                            src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+                            class="img-fluid rounded main-product-image"
+                            alt="Product"
+                        >
+                    </div>
+                    <!-- THUMBNAILS -->
+                    <div class="d-flex gap-3 mt-4">
+                        <img
+                            src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+                            class="thumbnail-img active-thumb"
+                            onclick="changeImage(this)"
+                            alt=""
+                        >
+                        <img
+                            src="https://images.unsplash.com/photo-1495435229349-e86db7bfa013"
+                            class="thumbnail-img"
+                            onclick="changeImage(this)"
+                            alt=""
+                        >
+                        <img
+                            src="https://images.unsplash.com/photo-1580910051074-3eb694886505"
+                            class="thumbnail-img"
+                            onclick="changeImage(this)"
+                            alt=""
+                        >
+                    </div>
+                </div>
+                <!-- PRODUCT INFO -->
+                <div class="col-lg-6">
+                    <h1 class="fw-bold mb-3">
+                        Premium Smartphone X
+                    </h1>
+                    <!-- RATINGS -->
+                    <div class="mb-3">
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-half text-warning"></i>
+                        <span class="ms-2 text-muted">
+                            (4.5 Ratings)
+                        </span>
+                    </div>
+                    <!-- PRICE -->
+                    <h2 class="fw-bold text-dark mb-4">
+                        ₹24,999
+                    </h2>
+                    <!-- DESCRIPTION -->
+                    <p class="text-muted mb-4">
+                        Experience next-generation performance with our
+                        Premium Smartphone X. Featuring ultra-fast processing,
+                        advanced camera technology, long battery life, and a
+                        stunning AMOLED display.
+                    </p>
+                    <!-- FEATURES -->
+                    <ul class="list-group mb-4">
+                        <li class="list-group-item">
+                            ✔ 128GB Storage
+                        </li>
+                        <li class="list-group-item">
+                            ✔ 8GB RAM
+                        </li>
+                        <li class="list-group-item">
+                            ✔ AMOLED Display
+                        </li>
+                        <li class="list-group-item">
+                            ✔ Fast Charging
+                        </li>
+                    </ul>
+                    <!-- QUANTITY -->
+                    <div class="d-flex align-items-center gap-3 mb-4">
+                        <button class="btn btn-outline-dark" onclick="decreaseQty()">
+                            -
+                        </button>
+                        <span id="quantity" class="fs-5 fw-bold">
+                            1
+                        </span>
+                        <button class="btn btn-outline-dark" onclick="increaseQty()">
+                            +
+                        </button>
+                    </div>
+                    <!-- BUTTONS -->
+                    <div class="d-flex gap-3">
+                        <button class="btn btn-dark btn-lg">
+                            <i class="bi bi-cart-plus"></i>
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-warning btn-lg">
+                            <i class="bi bi-heart"></i>
+                            Wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- RELATED PRODUCTS -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-5">
+                Related Products
+            </h2>
+            <div class="row g-4">
+                <!-- PRODUCT -->
+                <div class="col-md-3">
+                    <div class="card product-card h-100 shadow-sm">
+                        <img
+                            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
+                            class="card-img-top"
+                            alt=""
+                        >
+                        <div class="card-body">
+                            <h5>
+                                Wireless Headphones
+                            </h5>
+                            <p class="text-muted">
+                                Premium audio quality
+                            </p>
+                            <h6 class="fw-bold">
+                                ₹4,499
+                            </h6>
+                            <button class="btn btn-dark w-100 mt-3">
+                                View Product
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- PRODUCT -->
+                <div class="col-md-3">
+                    <div class="card product-card h-100 shadow-sm">
+                        <img
+                            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+                            class="card-img-top"
+                            alt=""
+                        >
+                        <div class="card-body">
+                            <h5>
+                                Running Shoes
+                            </h5>
+                            <p class="text-muted">
+                                Stylish sports footwear
+                            </p>
+                            <h6 class="fw-bold">
+                                ₹2,999
+                            </h6>
+                            <button class="btn btn-dark w-100 mt-3">
+                                View Product
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- PRODUCT -->
+                <div class="col-md-3">
+                    <div class="card product-card h-100 shadow-sm">
+                        <img
+                            src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518"
+                            class="card-img-top"
+                            alt=""
+                        >
+                        <div class="card-body">
+                            <h5>
+                                Casual T-Shirt
+                            </h5>
+                            <p class="text-muted">
+                                Everyday comfort wear
+                            </p>
+                            <h6 class="fw-bold">
+                                ₹999
+                            </h6>
+                            <button class="btn btn-dark w-100 mt-3">
+                                View Product
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- PRODUCT -->
+                <div class="col-md-3">
+                    <div class="card product-card h-100 shadow-sm">
+                        <img
+                            src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85"
+                            class="card-img-top"
+                            alt=""
+                        >
+                        <div class="card-body">
+                            <h5>
+                                Table Lamp
+                            </h5>
+                            <p class="text-muted">
+                                Elegant modern lighting
+                            </p>
+                            <h6 class="fw-bold">
+                                ₹5,999
+                            </h6>
+                            <button class="btn btn-dark w-100 mt-3">
+                                View Product
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <h4>
+                NeoCart
+            </h4>
+            <p>
+                Modern E-Commerce Experience
+            </p>
+            <p class="mb-0">
+                © 2026 NeoCart
+            </p>
+        </div>
+    </footer>
+    <!-- SCROLL TOP BUTTON -->
+    <button id="scrollTopBtn" class="btn btn-warning">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/product.js"></script>
+</body>
+</html>
